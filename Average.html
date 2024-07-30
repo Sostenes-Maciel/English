@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website</title>
+</head>
+<body>
+    <script>
+
+    let userName = prompt("Enter your name: ");
+    let note1 = parseFloat(prompt("Enter note 1: "));
+    let note2 = parseFloat(prompt("Enter note 2: "));
+
+    document.writeln(userName.toUpperCase() + ", First note = " + note1 + ", Second note = " + note2 + "; ");
+    let average = parseFloat((note1 + note2) / 2);
+
+    if (average >= 7) {
+        document.writeln("Approved! Your average was: " + average);
+    } else if (average < 3) {
+    document.writeln("Failed! Your average was: " + average);
+    } else {
+    document.writeln("Final Exam! Your average was: " + average);
+    }
+
+    </script>
+</body>
+</html>
